@@ -13166,7 +13166,7 @@ def ShowIDSDetection(CMD):
             if int(GET_ASSOC)>int(__builtin__.THRESHOLD_ASSOC) and int(GET_AUTH)<int(__builtin__.THRESHOLD_AUTH) and FrMAC!=ToBSSID:	# ASSOCIATION
                WarningCount=WarningCount+1;NotesInfo1="";NotesInfo2="";NotesInfo3=""
                PACKET_SENT=GET_ASSOC + " Association " + fcolor.BGreen + " / " + fcolor.BRed + GET_AUTH + " Authentication " + fcolor.BGreen + " / " + fcolor.BRed + GET_DEAUTH + " DeAuth "
-               ATTACK_TYPE="Association Flood"
+               ATTACK_TYPE="ARP poisoning"
                NotesInfo1="The data pattern match those persistent associating with AP."
                PrivacyInfo=GetPrivacyInfo(FrMAC,ToMAC,ToBSSID,0)
                WPSInfo=GetWPSInfo(FrMAC,ToMAC,ToBSSID)
